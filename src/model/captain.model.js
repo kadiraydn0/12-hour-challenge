@@ -8,7 +8,7 @@ const CaptainSchema = new mongoose.Schema(
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     team_name: { type: String, required: true, unique: true },
-    is_match_searching: { tpye: Boolean, default: false },
+    is_match_searchingig: { tpye: Boolean, default: false },
     city: { type: mongoose.Schema.Types.ObjectId, ref: "City" },
   },
   { timestamps: true }
