@@ -1,9 +1,8 @@
 import { Router } from "express";
+import captain from "./captain";
 
 const router = Router();
 
-router.get("/", () => {
-  console.log("mrb");
-});
+router.use("/captain", captain);
 
 export default router;
